@@ -24,7 +24,7 @@ const controllRecipes = async ()=>{
           const id = (window.location.hash).slice(1);
           if(!id) return;
           await model.loadRecipe(id);
-          // recipeView.renderSpinner();
+
           recipeView.renderSpinner();
          //0) load
          BookmarkView.render(model.state.bookmarks);
